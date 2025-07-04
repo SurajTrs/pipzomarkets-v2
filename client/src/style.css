@@ -1,0 +1,317 @@
+body,
+.container-fluid {
+  background-color: #e0f7ff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #0e2d3c;
+  margin: 0;
+  padding: 0;
+}
+
+.table,
+.table-bordered,
+.table-light,
+.bg-white {
+  background-color: #ffffff !important;
+  color: #0e2d3c;
+}
+
+.table thead th {
+  font-weight: 600;
+  background-color: #e6f4fa !important;
+}
+
+.top-bar {
+  height: 40px;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.top-bar .container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.top-bar .dropdown-toggle,
+.top-bar span {
+  color: #0e2d3c;
+  font-weight: 500;
+}
+
+.top-bar sup {
+  font-size: smaller;
+  vertical-align: top;
+  margin-left: 1px;
+}
+
+.separator {
+  height: 20px;
+}
+
+.navbar {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.navbar-brand img.navbar-logo {
+  filter: contrast(120%);
+}
+
+.navbar-nav .nav-link {
+  color: #0e2d3c !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #0f6519 !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+}
+
+
+.mega-menu .dropdown-item {
+  font-size: 0.95rem;
+
+}
+
+
+
+.mega-menu h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #01241b;
+}
+
+
+
+.blur-backdrop {
+  filter: blur(4px);
+  transition: filter 0.3s ease-in-out;
+}
+
+
+
+
+.navbar-nav > .nav-item:last-child {
+  margin-right: 0.5;
+  margin-left: 0.5;
+}
+
+
+.navbar-nav .nav-link {
+  margin-bottom: 0 !important;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+
+.mega-menu .dropdown-item:hover {
+  background-color: #d0f9e0;
+  color: #000;
+}
+
+
+@media (max-width: 991.98px) {
+  .navbar-nav .nav-link {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+.sidebar-button {
+  background-color: #0e2d3c;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.sidebar-button:hover {
+  background-color: #e94d35;
+  color: #fff;
+}
+
+.sidebar-button.active {
+  background-color: #e94d35;
+  color: #fff;
+}
+
+.trade-item {
+  transition: all 0.3s ease;
+  position: relative;
+  border-radius: 6px;
+}
+
+.trade-item:hover {
+  transform: scale(1.02);
+  z-index: 3;
+}
+
+.trade-popup {
+  display: none;
+  position: absolute;
+  top: -35px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.trade-item:hover .trade-popup {
+  display: block;
+  opacity: 1;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #e0f7ff;
+  color: #1a1a1a;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+.trading-section {
+  background-color: #bef8ed;
+}
+
+.platform-card {
+  background-color: #0e211a;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+
+s .platform-card img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.platform-card h5,
+.platform-card h6,
+.platform-card p,
+.platform-card small {
+  color: #ffffff;
+}
+.marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.marquee-track {
+  animation: scroll-left 30s linear infinite;
+  width: fit-content;
+}
+
+.marquee-item {
+  min-width: 250px;
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.hover-dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.navbar .dropdown-menu {
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #fff;
+  border: none;
+  min-width: 600px;
+  z-index: 1000;
+}
+
+.hover-dropdown .dropdown-menu {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.navbar .dropdown-toggle::after {
+  display: none;
+}
+
+.mega-menu .dropdown-item {
+  padding: 0.25rem 0;
+}
+.bg-accent {
+  background-color: #00bfa6 !important;
+  color: white !important;
+}
+.marquee-wrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.marquee-track {
+  display: flex;
+  animation: scroll-marquee 40s linear infinite;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.course-slider-rtl {
+  display: flex;
+  flex-direction: row-reverse;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+}
+
+.course-slider-rtl::-webkit-scrollbar {
+  height: 6px;
+}
+.course-slider-rtl::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.course-card {
+  min-width: 260px;
+  max-width: 260px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
