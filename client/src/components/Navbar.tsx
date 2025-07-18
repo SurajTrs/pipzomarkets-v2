@@ -1,26 +1,61 @@
 import React, { useEffect, useState } from 'react';
 import pipzologo1 from '../assets/pipzologo1.png'; 
+import '../style.css';
 const Navbar: React.FC = () => {
   const [isAnyDropdownOpen, setIsAnyDropdownOpen] = useState(false);
 
   useEffect(() => {
-    const dropdowns = document.querySelectorAll('.nav-item.hover-dropdown');
+  const dropdowns = document.querySelectorAll('.nav-item.hover-dropdown');
+  let closeTimeout: number | null = null;
+  let currentlyOpen: Element | null = null;
 
-    const handleMouseEnter = () => setIsAnyDropdownOpen(true);
-    const handleMouseLeave = () => setIsAnyDropdownOpen(false);
+  dropdowns.forEach((dropdown) => {
+    const menu = dropdown.querySelector('.dropdown-menu');
 
-    dropdowns.forEach((dropdown) => {
-      dropdown.addEventListener('mouseenter', handleMouseEnter);
-      dropdown.addEventListener('mouseleave', handleMouseLeave);
-    });
+    const handleMouseEnter = () => {
+      // Cancel close timer
+      if (closeTimeout) {
+        clearTimeout(closeTimeout);
+        closeTimeout = null;
+      }
 
-    return () => {
-      dropdowns.forEach((dropdown) => {
-        dropdown.removeEventListener('mouseenter', handleMouseEnter);
-        dropdown.removeEventListener('mouseleave', handleMouseLeave);
-      });
+      // Close any other open dropdown
+      if (currentlyOpen && currentlyOpen !== dropdown) {
+        const openMenu = currentlyOpen.querySelector('.dropdown-menu');
+        currentlyOpen.classList.remove('show');
+        openMenu?.classList.remove('show');
+      }
+
+      // Open the hovered dropdown
+      dropdown.classList.add('show');
+      menu?.classList.add('show');
+      currentlyOpen = dropdown;
+      setIsAnyDropdownOpen(true);
     };
-  }, []);
+
+    const handleMouseLeave = () => {
+      // Delay closing
+      closeTimeout = setTimeout(() => {
+        dropdown.classList.remove('show');
+        menu?.classList.remove('show');
+        if (currentlyOpen === dropdown) currentlyOpen = null;
+        setIsAnyDropdownOpen(false);
+      }, 300); // Customize delay here
+    };
+
+    dropdown.addEventListener('mouseenter', handleMouseEnter);
+    dropdown.addEventListener('mouseleave', handleMouseLeave);
+  });
+
+  return () => {
+    dropdowns.forEach((dropdown) => {
+      dropdown.replaceWith(dropdown.cloneNode(true)); // Quick way to remove all events
+    });
+    if (closeTimeout) clearTimeout(closeTimeout);
+  };
+}, []);
+
+
 
   useEffect(() => {
     const contentWrapper = document.getElementById('app-root');

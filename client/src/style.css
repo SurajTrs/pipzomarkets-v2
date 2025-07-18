@@ -554,3 +554,15 @@ table {
   border-radius: 25px;
   font-weight: 600;
 }
+/* Smooth fade-in/out (optional but nice) */
+.dropdown-menu {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  display: block !important;
+  visibility: hidden;
+}
+
+.nav-item.hover-dropdown.show .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
