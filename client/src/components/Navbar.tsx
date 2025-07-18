@@ -425,37 +425,41 @@ const Navbar: React.FC = () => {
                     </div>
                     <div className="col-md-3">
                       <h6 className="text-dark">Top Coins</h6>
-                      <a className="dropdown-item" href="#">
+                      
+                      <a className="dropdown-item" href="BitCoinPage">
+                        BitCoin
+                      </a>
+                      <a className="dropdown-item" href="EthereumPage">
                         Ethereum
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="RipplePage">
                         Ripple
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="SolanaPage">
                         Solana
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="DogecoinPage">
                         Dogecoin
                       </a>
                     </div>
                     <div className="col-md-3">
                       <h6 className="text-dark">More Cryptos</h6>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="StellarPage">
                         Stellar Lumens
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="LitecoinPage">
                         Litecoin
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="ChainlinkPage">
                         Chainlink
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="ShibaInuPage">
                         Shiba Inu
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="UniswapPage">
                         Uniswap
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="PolygonPage">
                         Polygon
                       </a>
                     </div>
@@ -493,7 +497,7 @@ const Navbar: React.FC = () => {
                         'DOLLAR INDEX',
                         'SPAIN 35',
                       ].map((item, i) => (
-                        <a className="dropdown-item" href="#" key={i}>
+                        <a className="dropdown-item" href="ChainlinkAndSMIPage" key={i}>
                           {item}
                         </a>
                       ))}
@@ -515,7 +519,7 @@ const Navbar: React.FC = () => {
                         'Wheat',
                         'Corn',
                       ].map((item, i) => (
-                        <a className="dropdown-item" href="#" key={i}>
+                        <a className="dropdown-item" href="CrudeOilPage" key={i}>
                           {item}
                         </a>
                       ))}
@@ -538,7 +542,7 @@ const Navbar: React.FC = () => {
                         'Teva',
                         'American Express',
                       ].map((item, i) => (
-                        <a className="dropdown-item" href="#" key={i}>
+                        <a className="dropdown-item" href="ApplePage" key={i}>
                           {item}
                         </a>
                       ))}

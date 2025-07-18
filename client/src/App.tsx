@@ -53,6 +53,20 @@ import Login from "./components/login";
 import Footer from "./components/Footer";
 import ForexTradingCoursesPage from "./pages/Academy/ForexTradingCoursesPage";
 import StockTradingCoursesPage from "./pages/Academy/StockTradingCoursesPage";
+import BitCoinPage from "./pages/Cryptocurrencies/Top Coins/BitCoinPage";
+import EthereumPage from "./pages/Cryptocurrencies/Top Coins/EthereumPage";
+import RipplePage from "./pages/Cryptocurrencies/Top Coins/RipplePage";
+import SolanaPage from "./pages/Cryptocurrencies/Top Coins/SolanaPage";
+import DogecoinPage from "./pages/Cryptocurrencies/Top Coins/DogecoinPage";
+import StellarPage from "./pages/Cryptocurrencies/More Cryptos/StellarPage";
+import LitecoinPage from "./pages/Cryptocurrencies/More Cryptos/LitecoinPage";
+import ChainlinkPage from "./pages/Cryptocurrencies/More Cryptos/ChainlinkPage";
+import ShibaInuPage from "./pages/Cryptocurrencies/More Cryptos/ShibaInuPage";
+import PolygonPage from "./pages/Cryptocurrencies/More Cryptos/PolygonPage";
+import UniswapPage from "./pages/Cryptocurrencies/More Cryptos/UniswapPage";
+import ChainlinkAndSMIPage from "./pages/TradingInfo/Indices/ChainlinkAndSMIPage";
+import CrudeOilPage from "./pages/TradingInfo/Commodities/CrudeOilPage";
+import ApplePage from "./pages/TradingInfo/Stocks/ApplePage";
 
 
 
@@ -113,6 +127,21 @@ const App: React.FC = () => {
           <Route path="/Login" element={<Login />} />
           <Route path="/ForexTradingCoursesPage" element={<ForexTradingCoursesPage />} />
           <Route path="/StockTradingCoursesPage" element={<StockTradingCoursesPage />} />
+          <Route path="/BitCoinPage" element={<BitCoinPage />} />
+          <Route path="/EthereumPage" element={<EthereumPage />} />
+          <Route path="/RipplePage" element={<RipplePage />} />
+          <Route path="/SolanaPage" element={<SolanaPage />} />
+          <Route path="/DogecoinPage" element={<DogecoinPage />} />
+          <Route path="/StellarPage" element={<StellarPage />} />
+          <Route path="/LitecoinPage" element={<LitecoinPage />} />
+          <Route path="/StellarPage" element={<StellarPage />} />
+          <Route path="/ChainlinkPage" element={<ChainlinkPage />} />
+          <Route path="/ShibaInuPage" element={<ShibaInuPage />} />
+          <Route path="/UniswapPage" element={<UniswapPage />} />
+          <Route path="/PolygonPage" element={<PolygonPage />} />
+          <Route path="/ChainlinkAndSMIPage" element={<ChainlinkAndSMIPage />} />
+          <Route path="/CrudeOilPage" element={<CrudeOilPage />} />
+          <Route path="/ApplePage" element={<ApplePage />} />
              </Routes>
       </main>
       <Footer/>
