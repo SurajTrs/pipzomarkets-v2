@@ -315,3 +315,242 @@ s .platform-card img {
 .course-card:hover {
   transform: translateY(-5px);
 }
+/* App wrapper container */
+.app-wrapper {
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Main content area */
+.page-content {
+  padding-bottom: 100px; /* space for bottom ticker */
+}
+
+/* Typography base */
+body {
+  font-size: 1rem;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+/* Image responsiveness */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive table */
+table {
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* ---------------------------
+   Small Mobile (≤ 480px)
+---------------------------- */
+@media (max-width: 480px) {
+  .app-wrapper {
+    padding: 0.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .course-card {
+    min-width: 100%;
+  }
+}
+
+/* ---------------------------
+   Tablet (481px – 768px)
+---------------------------- */
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar-nav .nav-link {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .course-card {
+    min-width: 90%;
+  }
+}
+
+/* ---------------------------
+   Laptop (769px – 1024px)
+---------------------------- */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .course-card {
+    min-width: 260px;
+  }
+}
+
+/* ---------------------------
+   Desktop (≥ 1025px)
+---------------------------- */
+@media (min-width: 1025px) {
+  .section-title {
+    font-size: 2.4rem;
+  }
+
+  .course-card {
+    min-width: 280px;
+  }
+}
+.mobile-platforms-section {
+  background: linear-gradient(135deg, #000000, #000000); /* deep dark green gradient */
+  border-top: 4px solid #133316;
+  border-bottom: 4px solid #16331e;
+}
+
+.mobile-platforms-section h2 {
+  font-size: 2.2rem;
+}
+
+.mobile-platforms-section ul li {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.mobile-platforms-section button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+.awards-section {
+  background: linear-gradient(135deg, #000000, #000000);
+}
+
+.award-card {
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 1rem;
+}
+
+.award-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(255, 191, 0, 0.3);
+}
+
+.award-card .card-title {
+  color: #1f897f;
+  font-size: 1.1rem;
+}
+.dropdown-menu {
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.nav-item.hover-dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+/* Wrapper with dark green background */
+.login-wrapper {
+  background-color: #0b3d0b; /* Dark green */
+  padding: 20px;
+}
+
+/* Card */
+.login-card {
+  background-color: #145214; /* Slightly lighter dark green */
+  max-width: 450px;
+  width: 100%;
+}
+
+/* Input backgrounds */
+.bg-dark-green {
+  background-color: #0b3d0b !important;
+}
+
+.text-light-green {
+  color: #9df59d !important;
+}
+
+.btn-light-green {
+  background-color: #9df59d;
+  color: #0b3d0b;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn-light-green:hover {
+  background-color: #86e686;
+}
+
+/* Responsive Padding */
+@media (max-width: 768px) {
+  .login-card {
+    padding: 2rem 1.2rem !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .login-card {
+    padding: 2.5rem 2rem !important;
+  }
+}
+.login-background {
+  background: linear-gradient(135deg, #007a7c, #1bc66e);
+  background-size: cover;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 360px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.login-card .form-control {
+  background-color: #ffffff;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.login-card .form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.login-card button {
+  border-radius: 25px;
+  font-weight: 600;
+}

@@ -1,83 +1,48 @@
 import React from 'react';
-import '../style.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-interface Award {
-  title: string;
-  year: string;
-  source: string;
-}
-
-const awards: Award[] = [
-  { title: 'Best Affiliate Program LATAM', year: '2024', source: 'World Business Stars Magazine' },
-  { title: 'Best affiliate program globally', year: '2024', source: 'Pan Finance Awards' },
-  { title: 'Outstanding Regulated Broker', year: '2024', source: 'Cfi.co' },
-  { title: 'Best Futures Trading Platform', year: '2024', source: 'International Investor Awards' },
-  { title: 'Best Educational Broker', year: '2024', source: 'International Investor Awards' },
-  { title: 'Best Trading Platform in Spain', year: '2024', source: 'Finance Derivative Awards' },
-  { title: 'Best Affiliate Program LATAM', year: '2024', source: 'World Business Stars Magazine' },
-  { title: 'Best affiliate program globally', year: '2024', source: 'Pan Finance Awards' },
-];
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
 const Awards: React.FC = () => {
-  return (
-    <div
-      className="py-5 text-white"
-      style={{
-        background: 'linear-gradient(to bottom right, #000000, #1a1a1a)',
-        overflow: 'hidden',
-        fontFamily: 'Segoe UI, sans-serif',
-      }}
-    >
-      <div className="container">
-        <h2 className="fw-bold display-5 text-center mb-4">
-          Our <span style={{ color: '#00BFA6' }}>Awards</span>
-        </h2>
+  const awards = [
+    {
+      title: "Best Mobile Trading Platform 2024",
+      image: "/images/award-mobile.png",
+    },
+    {
+      title: "Top Broker of the Year",
+      image: "/images/award-broker.png",
+    },
+    {
+      title: "Most Trusted Platform",
+      image: "/images/award-trusted.png",
+    },
+  ];
 
-     
-        <div className="marquee-wrapper position-relative overflow-hidden">
-          <div className="marquee-track d-flex align-items-center">
-            {awards.map((award, index) => (
-              <div
-                key={index}
-                className="award-card text-white mx-3 p-4 rounded-4 shadow"
-                style={{
-                  background: 'rgba(255, 255, 255, 0.05)',
-                  backdropFilter: 'blur(8px)',
-                  minWidth: '260px',
-                  border: '1px solid rgba(255,255,255,0.1)',
-                  flexShrink: 0,
-                }}
-              >
-                <div style={{ fontSize: '36px', color: '#00BFA6' }}>🏆</div>
-                <h6 className="mt-2 fw-bold">{award.title}</h6>
-                <div className="text-light small">{award.year}</div>
-                <small className="text-secondary">{award.source}</small>
-              </div>
-            ))}
-           
-            {awards.map((award, index) => (
-              <div
-                key={index + awards.length}
-                className="award-card text-white mx-3 p-4 rounded-4 shadow"
-                style={{
-                  background: 'rgba(255, 255, 255, 0.05)',
-                  backdropFilter: 'blur(8px)',
-                  minWidth: '260px',
-                  border: '1px solid rgba(255,255,255,0.1)',
-                  flexShrink: 0,
-                }}
-              >
-                <div style={{ fontSize: '36px', color: '#00BFA6' }}>🏆</div>
-                <h6 className="mt-2 fw-bold">{award.title}</h6>
-                <div className="text-light small">{award.year}</div>
-                <small className="text-secondary">{award.source}</small>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
+  return (
+    <section className="awards-section py-5 text-light">
+      <Container>
+        <h2 className="text-center fw-bold mb-5 ">
+          Our Achievements
+        </h2>
+        <Row className="g-4 justify-content-center">
+          {awards.map((award, index) => (
+            <Col md={4} sm={6} key={index}>
+              <Card className="award-card text-center h-100 border-0 shadow-sm">
+                <Card.Img
+                  variant="top"
+                  src={award.image}
+                  alt={award.title}
+                  className="p-4"
+                  style={{ height: '180px', objectFit: 'contain' }}
+                />
+                <Card.Body>
+                  <Card.Title className="fw-semibold text-light fs-5">{award.title}</Card.Title>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </section>
   );
 };
 

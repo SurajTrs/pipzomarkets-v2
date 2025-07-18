@@ -23,18 +23,18 @@ const LandingPage: React.FC = () => {
 
   return (
     <div
-      className="container-fluid landing-bg px-4 text-white d-flex align-items-center"
+      className="container-fluid landing-bg px-3 px-md-4 text-white d-flex align-items-center"
       style={{
-        backgroundImage: "linear-gradient(to bottom right, rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('/assets/back3.jpg')",
+        backgroundImage:
+          "linear-gradient(to bottom right, rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('/assets/back3.jpg')",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         minHeight: "100vh",
       }}
     >
-      <div className="row w-100 align-items-center">
-        {/* LEFT SIDE */}
-        <div className="col-lg-6 mb-5 mb-lg-0">
+      <div className="row w-100 align-items-center gy-4">
+        <div className="col-lg-6">
           <h1 className="display-4 fw-bold" style={{ lineHeight: "1.2" }}>
             Trade Smarter<br />With Confidence
           </h1>
@@ -49,7 +49,7 @@ const LandingPage: React.FC = () => {
               Free Demo <span className="ms-1">&gt;</span>
             </button>
           </div>
-          <div className="mt-5 d-flex align-items-center gap-3">
+          <div className="mt-5 d-flex align-items-center gap-3 flex-wrap">
             <img
               src="https://cdn-icons-png.flaticon.com/512/190/190411.png"
               alt="award"
@@ -62,14 +62,14 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
 
-        {/* RIGHT SIDE */}
         <div className="col-lg-6">
           <div
-            className="rounded-4 p-4 shadow-lg"
+            className="rounded-4 p-3 p-md-4 shadow-lg"
             style={{
               backgroundColor: "rgba(255, 255, 255, 0.08)",
               backdropFilter: "blur(12px)",
               border: "1px solid rgba(255,255,255,0.15)",
+              overflowX: "auto",
             }}
           >
             {tradingItems.map((item, index) => (
@@ -82,6 +82,7 @@ const LandingPage: React.FC = () => {
                   backgroundColor: "rgba(255,255,255,0.05)",
                   cursor: "pointer",
                   transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                  minWidth: "280px",
                 }}
               >
                 <div className="d-flex align-items-center gap-3">
