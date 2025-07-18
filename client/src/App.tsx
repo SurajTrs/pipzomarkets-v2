@@ -50,6 +50,7 @@ import Bitcoin from "./pages/Bitcoin/Bitcoin";
 import HowBitcoin from "./pages/Bitcoin/HowBitcoin";
 import BitcoinETF from "./pages/Bitcoin/BitcoinETF";
 import Login from "./components/login";
+import Footer from "./components/Footer";
 
 
 
@@ -108,10 +109,9 @@ const App: React.FC = () => {
           <Route path="/HowBitcoin" element={<HowBitcoin />} />
           <Route path="/BitcoinETF" element={<BitcoinETF />} />
           <Route path="/Login" element={<Login />} />
-
-     
-        </Routes>
+             </Routes>
       </main>
+      <Footer/>
       <BottomTicker />
     </div>
   </Router>

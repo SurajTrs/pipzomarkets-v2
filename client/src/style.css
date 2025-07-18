@@ -324,10 +324,7 @@ s .platform-card img {
   box-sizing: border-box;
 }
 
-/* Main content area */
-.page-content {
-  padding-bottom: 100px; /* space for bottom ticker */
-}
+
 
 /* Typography base */
 body {
