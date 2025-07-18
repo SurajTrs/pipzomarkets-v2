@@ -280,31 +280,31 @@ const Navbar: React.FC = () => {
                       <a className="dropdown-item" href="CoursePage">
                         Our Popular Courses
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="CoursePage">
                         Start Trading Now... Quick &amp; Dirty
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="PlatformsPage">
                         Platforms Tutorials
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="FCCpage">
                         Forex, Cryptos &amp; Commodities
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="Introduction">
                         Introduction to Technical Analysis
                       </a>
                     </div>
                     <div className="col-md-2">
                       <h6 className="text-dark">Courses Topics</h6>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="ForexTradingCoursesPage">
                         Forex Trading Courses
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="CoursesForBeginners">
                         Courses for Beginners
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="AllCourses">
                         All Courses
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="StockTradingCoursesPage">
                         Stock Market Trading Courses
                       </a>
                     </div>
@@ -330,52 +330,52 @@ const Navbar: React.FC = () => {
                   <div className="row g-3">
                     <div className="col-md-3">
                       <h6 className="text-dark">Web &amp; Apps</h6>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="WebTrader">
                         WebTrader
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="AvaOptions">
                         AvaOptions
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="PipzoTradeApp">
                         AvaTrade App
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="MacTrading">
                         Mac Trading
                       </a>
                     </div>
                     <div className="col-md-3">
                       <h6 className="text-dark">MetaTrader 4</h6>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="MetaTrader">
                         What is MetaTrader
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="GuardianAngel">
                         Guardian Angel
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="ExpertAdvisors">
                         Expert Advisors
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="VPS">
                         VPS
                       </a>
                     </div>
                     <div className="col-md-3">
                       <h6 className="text-dark">MetaTrader 5</h6>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="TradeMT5">
                         How to Trade with MetaTrader 5
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="Algorithmic">
                         Algorithmic Trading on MT5
                       </a>
                     </div>
                     <div className="col-md-3">
                       <h6 className="text-dark">Automated Trading</h6>
-                      <a className="dropdown-item" href="#">
-                        AvaSocial
+                      <a className="dropdown-item" href="PIPZOSocialBanner">
+                        PipzoSocial
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="DupliTrade">
                         DupliTrade
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="Capitalise">
                         Capitalise.ai
                       </a>
                     </div>
@@ -387,7 +387,7 @@ const Navbar: React.FC = () => {
               <li className="nav-item dropdown hover-dropdown position-static">
                 <a
                   className="nav-link dropdown-toggle text-dark fw-semibold"
-                  href="#"
+                  href="Cryptocurrencies"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -401,25 +401,25 @@ const Navbar: React.FC = () => {
                   <div className="row g-3">
                     <div className="col-md-3">
                       <h6 className="text-dark">Crypto Basics</h6>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="Cryptocurrencies">
                         What Are Cryptocurrencies
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="HowCrypto">
                         How to Trade Cryptocurrencies
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="CryptoETF">
                         Crypto ETFs
                       </a>
                     </div>
                     <div className="col-md-3">
                       <h6 className="text-dark">Bitcoin</h6>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="Bitcoin">
                         What is Bitcoin
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="HowBitcoin">
                         How to Trade Bitcoin
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="BitcoinETF">
                         Bitcoin ETFs
                       </a>
                     </div>
