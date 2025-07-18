@@ -67,6 +67,20 @@ import UniswapPage from "./pages/Cryptocurrencies/More Cryptos/UniswapPage";
 import ChainlinkAndSMIPage from "./pages/TradingInfo/Indices/ChainlinkAndSMIPage";
 import CrudeOilPage from "./pages/TradingInfo/Commodities/CrudeOilPage";
 import ApplePage from "./pages/TradingInfo/Stocks/ApplePage";
+import EurUsdPage from "./pages/TradingInfo/Forex pairs/EurUsdPage";
+import US500Page from "./pages/TradingInfo/Options/US500Page";
+import CurrencyTradingPage from "./pages/Education/Trading for Beginners/CurrencyTradingPage";
+import HowtoTradeOnline from "./pages/Education/Trading for Beginners/HowtoTradeOnline";
+import CopyTradingPage from "./pages/Education/Trading for Beginners/ CopyTradingPage";
+import ShortSellingPage from "./pages/Education/Trading for Beginners/ShortSellingPage";
+import FinancialDerivativesPage from "./pages/Education/Trading for Beginners/FinancialDerivativesPage";
+import TechnicalAnalysisIndicatorsStrategies from "./pages/Education/Trading Platforms Tutorials/TechnicalAnalysisIndicatorsStrategies";
+import OrderTypes from "./pages/Education/Trading Platforms Tutorials/OrderTypes";
+import OnlineTradingStrategies from "./pages/Education/Trading Platforms Tutorials/OnlineTradingStrategies";
+import MarketTerms from "./pages/Education/Trading Platforms Tutorials/MarketTerms";
+import LiveTradingWebinars from "./pages/Education/Webinars/LiveTradingWebinars";
+import TradingRules from "./pages/Education/Webinars/TradingRules";
+import Blog from "./pages/Education/Webinars/Blog";
 
 
 
@@ -142,6 +156,23 @@ const App: React.FC = () => {
           <Route path="/ChainlinkAndSMIPage" element={<ChainlinkAndSMIPage />} />
           <Route path="/CrudeOilPage" element={<CrudeOilPage />} />
           <Route path="/ApplePage" element={<ApplePage />} />
+          <Route path="/EurUsdPage" element={<EurUsdPage />} />
+          <Route path="/US500Page" element={<US500Page />} />
+          <Route path="/HowtoTradeOnline" element={<HowtoTradeOnline />} />
+          <Route path="/CurrencyTradingPage" element={<CurrencyTradingPage />} />
+          <Route path="/CopyTradingPage" element={<CopyTradingPage />} />
+          <Route path="/ShortSellingPage" element={<ShortSellingPage />} />
+          <Route path="/FinancialDerivativesPage" element={<FinancialDerivativesPage />} />
+          <Route path="/TechnicalAnalysisIndicatorsStrategies" element={<TechnicalAnalysisIndicatorsStrategies />} />
+          <Route path="/OrderTypes" element={<OrderTypes />} />
+          <Route path="/OnlineTradingStrategies" element={<OnlineTradingStrategies />} />
+          <Route path="/MarketTerms" element={<MarketTerms />} />
+          
+          <Route path="/LiveTradingWebinars" element={<LiveTradingWebinars />} />
+
+          <Route path="/TradingRules" element={<TradingRules />} />
+          <Route path="/Blog" element={<Blog />} />
+          
              </Routes>
       </main>
       <Footer/>

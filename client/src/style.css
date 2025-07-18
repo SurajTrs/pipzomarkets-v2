@@ -563,3 +563,47 @@ table {
   opacity: 1;
   visibility: visible;
 }
+
+.video-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+        .hover-card-container {
+          position: relative;
+        }
+        .hover-popup {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          right: 10px;
+          opacity: 0;
+          visibility: hidden;
+          transform: scale(0.95);
+          transition: all 0.3s ease;
+          z-index: 10;
+        }
+        .card-hover-effect:hover .hover-popup {
+          opacity: 1;
+          visibility: visible;
+          transform: scale(1);
+        }
+.strategy-card:hover .strategy-hover {
+          opacity: 1;
+        }
+        .strategy-hover {
+          transition: opacity 0.3s ease-in-out;
+          z-index: 10;
+        }
+.order-hover {
+          transition: opacity 0.3s ease-in-out;
+          z-index: 10;
+        }
+        .strategy-card:hover .strategy-hover,
+        .card:hover .order-hover {
+          opacity: 1;
+        }

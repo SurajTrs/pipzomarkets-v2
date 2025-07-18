@@ -566,7 +566,7 @@ const Navbar: React.FC = () => {
                         'EUR/AUD',
                         'AUD/CHF',
                       ].map((item, i) => (
-                        <a className="dropdown-item" href="#" key={i}>
+                        <a className="dropdown-item" href="EurUsdPage" key={i}>
                           {item}
                         </a>
                       ))}
@@ -590,7 +590,7 @@ const Navbar: React.FC = () => {
                         'GBP/JPY Options',
                         'USD/CHF Options',
                       ].map((item, i) => (
-                        <a className="dropdown-item" href="#" key={i}>
+                        <a className="dropdown-item" href="US500Page" key={i}>
                           {item}
                         </a>
                       ))}
@@ -609,7 +609,6 @@ const Navbar: React.FC = () => {
                 </div>
               </li>
 
-              {/* Education Dropdown */}
               <li className="nav-item dropdown hover-dropdown position-static">
                 <a
                   className="nav-link dropdown-toggle text-dark fw-semibold"
@@ -627,46 +626,46 @@ const Navbar: React.FC = () => {
                   <div className="row g-4">
                     <div className="col-md-3">
                       <h6 className="text-dark">Trading for Beginners</h6>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="HowtoTradeOnline">
                         How to Trade Online
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="CurrencyTradingPage">
                         Currency Trading
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="CopyTradingPage">
                         Copy Trading
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="ShortSellingPage">
                         Short Selling
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="FinancialDerivativesPage">
                         Financial Derivatives
                       </a>
                     </div>
                     <div className="col-md-3">
                       <h6 className="text-dark">Trading Platforms Tutorials</h6>
-                      <a className="dropdown-item" href="#">
-                        Technical Analysis Indicators &amp; Strategies
+                      <a className="dropdown-item" href="TechnicalAnalysisIndicatorsStrategies">
+                        Technical Analysis Indicators & Strategies
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="OrderTypes">
                         Order Types
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="OnlineTradingStrategies">
                         Online Trading Strategies
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="MarketTerms">
                         Market Terms
                       </a>
                     </div>
                     <div className="col-md-3">
                       <h6 className="text-dark">Webinars</h6>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="LiveTradingWebinars">
                         Economic Indicators
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="TradingRules">
                         Trading Rules
                       </a>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="Blog">
                         Blog
                       </a>
                     </div>
@@ -674,7 +673,6 @@ const Navbar: React.FC = () => {
                 </div>
               </li>
 
-              {/* Partners Dropdown */}
               <li className="nav-item dropdown hover-dropdown position-static">
                 <a
                   className="nav-link dropdown-toggle text-dark fw-semibold"
@@ -685,6 +683,7 @@ const Navbar: React.FC = () => {
                 >
                   Partners
                 </a>
+
                 <div
                   className="dropdown-menu mega-menu p-4 shadow-lg w-100 border-0 rounded-0 m-0"
                   style={{ backgroundColor: '#e6fff2', left: 0, right: 0, top: '100%', transform: 'none' }}
@@ -705,7 +704,6 @@ const Navbar: React.FC = () => {
                 </div>
               </li>
 
-              {/* About Dropdown */}
               <li className="nav-item dropdown hover-dropdown position-static">
                 <a
                   className="nav-link dropdown-toggle text-dark fw-semibold"
@@ -779,7 +777,6 @@ const Navbar: React.FC = () => {
                 </div>
               </li>
 
-              {/* Search Icon */}
               <li className="nav-item d-flex align-items-center">
                 <a className="nav-link text-dark" href="#search" aria-label="Search">
                   <i className="bi bi-search"></i>
@@ -787,7 +784,6 @@ const Navbar: React.FC = () => {
               </li>
             </ul>
 
-            {/* Login/Register */}
             <div className="d-flex align-items-center gap-3">
               <a href="login" className="text-decoration-none text-dark fw-semibold">
                 Login
